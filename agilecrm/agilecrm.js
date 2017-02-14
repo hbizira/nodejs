@@ -957,7 +957,7 @@ ContactAPI.prototype.getContactsByPropertyFilter = function getContactsByPropert
 	var qs = require("querystring");
 	// Build the post string from an object
 	  var post_data = qs.stringify({
-		  'page_size' : 25,
+		  'page_size' : 250,
 		  'global_sort_key': '-created_time',
 		  'filterJson': '{"rules":[{"LHS":"'+property+'","CONDITION":"EQUALS","RHS":"'+value+'"}],"contact_type":"PERSON"}'
 	  });
